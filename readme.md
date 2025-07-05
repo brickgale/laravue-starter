@@ -1,5 +1,5 @@
 # Laravel Vue Starter
-📈 Dashboard for sales data built with Laravel, Vue.js, and TypeScript.
+Starter Kit made with Laravel, Vue.js, and TypeScript.
 
 ## Development Environment Setup
 
@@ -12,7 +12,7 @@
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd sales-dashboard
+   cd laravue-starter
    ```
 
 2. **Copy environment file**
@@ -77,7 +77,7 @@
 ```
 
 ## Tech Stack
-- **Backend**: Laravel 11, PHP 8.3
+- **Backend**: Laravel 12, PHP 8.3
 - **Frontend**: Vue.js 3, TypeScript
 - **Database**: MySQL
 - **Styling**: Tailwind CSS
