@@ -1,16 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Web\PageController;
 
-Route::get('/{vue?}', function() {
-    return view('layouts.app');
-})->where('vue', '[\/\w\.-]*');
+Route::get('{all}', [PageController::class, 'handler'])->where('all', '^(?!api).*$');

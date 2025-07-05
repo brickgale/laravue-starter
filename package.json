@@ -1,24 +1,64 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
-  "devDependencies": {
-    "axios": "^0.15.3",
-    "bootstrap-sass": "^3.3.7",
-    "cross-env": "^3.2.3",
-    "jquery": "^3.1.1",
-    "keen-ui": "^1.0.0",
-    "laravel-mix": "0.*",
-    "lodash": "^4.17.4",
-    "vue": "^2.1.10",
-    "vue-resource": "^1.3.4",
-    "vue-router": "^2.7.0"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "format": "prettier --write resources/",
+        "format:check": "prettier --check resources/",
+        "lint": "eslint . --fix"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.19.0",
+        "@types/node": "^22.13.5",
+        "@types/vue-router": "^2.0.0",
+        "@vue/eslint-config-typescript": "^14.3.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.17.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-vue": "^9.32.0",
+        "postcss": "^8.4.47",
+        "prettier": "^3.4.2",
+        "prettier-plugin-organize-imports": "^4.1.0",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "typescript-eslint": "^8.23.0",
+        "vue-tsc": "^2.2.4"
+    },
+    "dependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/line-clamp": "^0.4.4",
+        "@tailwindcss/postcss": "^4.1.7",
+        "@tailwindcss/typography": "^0.5.16",
+        "@tailwindcss/vite": "^4.1.7",
+        "@tanstack/vue-table": "^8.21.3",
+        "@vee-validate/zod": "^4.15.1",
+        "@vitejs/plugin-vue": "^5.2.1",
+        "@vueuse/core": "^13.4.0",
+        "axios": "^1.6.7",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.0",
+        "lucide-vue-next": "^0.468.0",
+        "pinia": "^3.0.1",
+        "pinia-plugin-persistedstate": "^4.2.0",
+        "preline": "^1.9.0",
+        "reka-ui": "^2.3.1",
+        "tailwind-merge": "^3.3.1",
+        "tailwindcss": "^4.1.7",
+        "tw-animate-css": "^1.3.0",
+        "typescript": "^5.2.2",
+        "vee-validate": "^4.15.1",
+        "vite": "^6.2.0",
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.1",
+        "vue-sonner": "^2.0.1",
+        "zod": "^3.25.67"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.9.5",
+        "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
+        "lightningcss-linux-x64-gnu": "^1.29.1"
+    }
 }
